@@ -1,18 +1,18 @@
 {% set name = "diffmah" %}
-{% set version = "0.2.0" %}
+{% set version = "0.3.0" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://github.com/ArgonneCPAC/diffmah/archive/refs/tags/{{ version }}.tar.gz
-  sha256: 51e85ec1ff92e44d4450e63c01da8b2b4b9ab326070969224a6cb2ad1f73392f
+  url: https://github.com/ArgonneCPAC/diffmah/archive/refs/tags/v{{ version }}.tar.gz
+  sha256: 51b7dac196faa4bd87fcdc7708a4b276e9d35a18331f89d91bfa42d0daa8d715
 
 build:
   noarch: python
   number: 0
-  script: "{{ PYTHON }} -m pip install . -vv"
+  script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
