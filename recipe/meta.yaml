@@ -1,5 +1,5 @@
 {% set name = "diffmah" %}
-{% set version = "0.3.0" %}
+{% set version = "0.4.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/ArgonneCPAC/diffmah/archive/refs/tags/v{{ version }}.tar.gz
-  sha256: 51b7dac196faa4bd87fcdc7708a4b276e9d35a18331f89d91bfa42d0daa8d715
+  sha256: 411dd81d15840f724c5ff360964e1d5d24b70d2377abd23acacf187defccb39c
 
 build:
   noarch: python
