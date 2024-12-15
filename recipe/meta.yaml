@@ -16,18 +16,20 @@ build:
 
 requirements:
   host:
-    - python >=3.6
+    - python {{ python_min }}
     - pip
     - setuptools
     - setuptools_scm >=7
   run:
-    - python >=3.6
+    - python >={{ python_min }}
     - numpy
     - jax >=0.3.0
 
 test:
   imports:
     - diffmah
+  requires:
+    - python {{ python_min }}
 
 about:
   home: https://github.com/ArgonneCPAC/diffmah
